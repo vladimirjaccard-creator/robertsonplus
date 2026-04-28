@@ -1,106 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced Corporate Solutions | Name</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Assuming basic structure for now, more CSS will be added via style.css -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robertson+ — Swiss Commercial Real Estate Value Engineering</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="20260427_logo_plus.svg">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">AdvancedCorp</div>
-            <nav>
-                <a href="#services">Services</a>
-                <a href="#approach">Approach</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
 
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true">
+    <svg class="cursor-cross" viewBox="0 0 385.17 385.18" xmlns="http://www.w3.org/2000/svg">
+      <path d="M222.86,222.72h-60.51v-60.51h60.51v60.51ZM247.52,162.46h-.03c-16.69-.14-24.59-8.03-24.77-24.83V0h-60.27v137.63c-.19,16.8-8.08,24.68-24.77,24.83H0v60.26h137.72c16.68.11,24.54,7.99,24.73,24.83v137.63h60.27v-137.63c.18-16.83,8.05-24.72,24.73-24.83h137.72v-60.26h-137.66Z"/>
+    </svg>
+  </div>
+
+  <!-- Skip to content -->
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Header -->
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="#" class="logo-link" aria-label="Robertson+ — Home">
+        <svg class="logo-wordmark" viewBox="0 0 425.81 62.15" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7.66,28.94h18.05c8.51,0,12.77-4.25,12.77-11.15,0-7.41-3.41-11.15-12.34-11.15H7.66v22.3ZM0,0h28.43C39.16,0,46.4,6.72,46.4,16.69c0,7.41-3.24,12.68-10.56,15.07v.26c6.21,2.21,8.17,6.47,8.77,15.49.68,9.79,1.7,12.26,2.81,13.03v.34h-8.26c-1.28-1.11-1.53-3.4-2.21-13.62-.6-8.94-4.17-12.09-12.34-12.09H7.66v25.71H0V0Z"/><path d="M87.18,38.91c0-9.71-4.77-17.45-14.13-17.45s-14.22,7.75-14.22,17.45,4.85,17.37,14.22,17.37,14.13-7.66,14.13-17.37M51.76,38.91c0-12.77,8.18-23.16,21.29-23.16s21.2,10.39,21.2,23.16-8,23.16-21.2,23.16-21.29-10.39-21.29-23.16"/><path d="M134.01,39.08c0-9.88-4-17.37-12.34-17.37-9.62,0-14.05,7.83-14.05,17.37s4.6,17.28,13.96,17.28c8.43,0,12.43-7.32,12.43-17.28M108.21,55.08h-.17v5.79h-6.9V0h6.9v23.15h.17c3.32-4.51,7.75-7.32,14.13-7.32,11.15,0,18.73,8.52,18.73,23.16s-7.07,23.16-18.98,23.16c-5.96,0-10.3-2.13-13.88-7.07"/><path d="M152.74,35.33h26.48c-.43-8.77-4.94-14.13-12.85-14.13s-12.6,6.13-13.62,14.13M145.5,38.91c0-12.77,8.34-23.16,20.86-23.16,13.2,0,20.26,10.22,20.26,24.77h-34.05c.51,8.94,5.36,15.75,14.22,15.75,6.39,0,10.64-3.07,12.17-9.02h6.73c-2.04,9.45-8.94,14.81-18.9,14.81-13.45,0-21.29-10.39-21.29-23.16"/><path d="M200.24,24.18h.17c2.64-4.25,7.24-7.83,13.11-7.83,1.28,0,1.96.17,2.81.51v6.64h-.26c-1.02-.34-1.7-.43-3.06-.43-6.81,0-12.77,5.11-12.77,13.37v24.43h-6.9V16.86h6.9v7.32Z"/><path d="M219.74,16.86h6.39V2.98h6.9v13.88h8.51v5.62h-8.51v28.6c0,3.07,1.62,4.09,4.43,4.09,1.36,0,2.89-.34,3.66-.6h.26v5.96c-1.62.34-3.49.6-5.53.6-5.62,0-9.7-2.3-9.7-8.51v-30.14h-6.39v-5.62Z"/><path d="M245.88,46.57h7.07c.93,7.66,6.05,9.79,12.6,9.79,7.23,0,10.22-3.15,10.22-7.24,0-4.94-3.41-6.21-11.49-7.92-8.68-1.79-16.43-3.58-16.43-13.19,0-7.32,5.62-12.09,15.83-12.09,10.9,0,16.26,5.19,17.28,13.79h-7.07c-.68-5.79-3.83-8.34-10.39-8.34s-8.85,2.81-8.85,6.3c0,4.77,4.25,5.7,11.83,7.24,8.86,1.79,16.26,3.75,16.26,13.88,0,8.85-7.24,13.37-17.37,13.37-12.09,0-18.81-5.71-19.5-15.58"/><path d="M323.18,38.91c0-9.71-4.77-17.45-14.13-17.45s-14.22,7.75-14.22,17.45,4.85,17.37,14.22,17.37,14.13-7.66,14.13-17.37M287.76,38.91c0-12.77,8.17-23.16,21.28-23.16s21.2,10.39,21.2,23.16-8,23.16-21.2,23.16-21.28-10.39-21.28-23.16"/><path d="M344.04,22.65h.17c3.15-4.17,7.58-6.81,13.96-6.81,9.19,0,14.81,5.02,14.81,14.13v30.9h-6.9v-30.31c0-5.7-3.74-8.94-9.96-8.94-6.98,0-12.09,4.94-12.09,12.18v27.07h-6.9V16.86h6.9v5.79Z"/><path d="M408.94,23.19h-6.29v-6.29h6.29v6.29ZM411.5,16.93h0c-1.73-.01-2.55-.83-2.57-2.58V.05h-6.26v14.3c-.02,1.75-.84,2.56-2.57,2.58h-14.31v6.26h14.31c1.73.01,2.55.83,2.57,2.58v14.3h6.26v-14.3c.02-1.75.84-2.57,2.57-2.58h14.31v-6.26h-14.3Z"/>
+        </svg>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#approach">Approach</a>
+        <a href="#who-we-serve">Who we serve</a>
+        <a href="#situations">Selected situations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn-primary nav-cta">Request a confidential asset review</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+      <a href="#approach">Approach</a>
+      <a href="#who-we-serve">Who we serve</a>
+      <a href="#situations">Selected situations</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn-primary">Request a confidential asset review</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero — split layout: text left, image right -->
     <section id="hero" class="hero">
-        <div class="container">
-            <h1>Driving Tomorrow's Success with Precision Engineering.</h1>
-            <p class="subtitle">We deliver integrated, bespoke solutions across finance, infrastructure, and technology sectors.</p>
-            <a href="#contact" class="cta-button">Start Your Project Consultation</a>
+      <div class="hero-text">
+        <span class="eyebrow">Swiss commercial real estate</span>
+        <h1>Value engineering for assets that deserve better decisions.</h1>
+        <p class="hero-body">We assess the asset beyond its current surface condition — reading legal, spatial, leasing, technical, and financial realities together to identify hidden constraints and overlooked potential.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Request a confidential asset review</a>
+          <a href="#approach" class="btn-secondary">See how we think</a>
         </div>
+      </div>
+      <div class="hero-image-panel" role="img" aria-label="Commercial real estate asset — Swiss office district"></div>
     </section>
 
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Core Expertise</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <h3>Financial Modeling</h3>
-                    <p>Advanced risk assessment and predictive financial modeling tailored for high-growth enterprises.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Infrastructure Development</h3>
-                    <p>End-to-end planning and execution for scalable, resilient physical and digital infrastructure.</p>
-                </div>
-                <div class="service-card">
-                    <h3>AI & Machine Learning</h3>
-                    <p>Implementing bespoke AI solutions to automate processes and unlock latent business value.</p>
-                </div>
+    <!-- Approach -->
+    <section id="approach" class="section-ciment">
+      <div class="container">
+        <span class="eyebrow">Our approach</span>
+        <h2>Not more noise. Better decisions.</h2>
+        <p class="section-intro">Robertson+ provides the clarity required to act with greater precision on occupancy, capital deployment, risk sequencing, and value narrative.</p>
+
+        <div class="three-col-grid">
+          <div class="feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 385.17 385.18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M222.86,222.72h-60.51v-60.51h60.51v60.51ZM247.52,162.46h-.03c-16.69-.14-24.59-8.03-24.77-24.83V0h-60.27v137.63c-.19,16.8-8.08,24.68-24.77,24.83H0v60.26h137.72c16.68.11,24.54,7.99,24.73,24.83v137.63h60.27v-137.63c.18-16.83,8.05-24.72,24.73-24.83h137.72v-60.26h-137.66Z"/>
+              </svg>
             </div>
-        </div>
-    </section>
+            <h3>Asset diagnosis</h3>
+            <p>A structured reading of the asset's legal, spatial, technical, and leasing condition — identifying constraints and quantifying potential before any decision is made.</p>
+          </div>
 
-    <section id="approach" class="approach">
-        <div class="container">
-            <h2>Our Proven Methodology</h2>
-            <div class="methodology-steps">
-                <div class="step">
-                    <span class="step-number">1</span>
-                    <h3>Discovery</h3>
-                    <p>Deep dive workshops to align strategic goals with technical feasibility.</p>
-                </div>
-                <div class="step">
-                    <span class="step-number">2</span>
-                    <h3>Design</h3>
-                    <p>Building phased blueprints with rigorous prototyping and stakeholder sign-off.</p>
-                </div>
-                <div class="step">
-                    <span class="step-number">3</span>
-                    <h3>Deployment</h3>
-                    <p>Flawless integration and deployment, supported by dedicated post-launch maintenance.</p>
-                </div>
+          <div class="feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 385.17 385.18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M222.86,222.72h-60.51v-60.51h60.51v60.51ZM247.52,162.46h-.03c-16.69-.14-24.59-8.03-24.77-24.83V0h-60.27v137.63c-.19,16.8-8.08,24.68-24.77,24.83H0v60.26h137.72c16.68.11,24.54,7.99,24.73,24.83v137.63h60.27v-137.63c.18-16.83,8.05-24.72,24.73-24.83h137.72v-60.26h-137.66Z"/>
+              </svg>
             </div>
-        </div>
-    </section>
+            <h3>Market re-underwriting</h3>
+            <p>Market logic applied to income quality, tenant risk, and vacancy — translating leasing realities into financial re-underwriting that reflects true asset performance.</p>
+          </div>
 
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <h2>Select Success Stories</h2>
-            <div class="portfolio-grid">
-                <div class="project-card">Project Alpha (Finance)</div>
-                <div class="project-card">Global Energy Grid Overhaul (Infrastructure)</div>
-                <div class="project-card">Healthcare AI Diagnostic Tool (Technology)</div>
+          <div class="feature-card reveal">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 385.17 385.18" xmlns="http://www.w3.org/2000/svg">
+                <path d="M222.86,222.72h-60.51v-60.51h60.51v60.51ZM247.52,162.46h-.03c-16.69-.14-24.59-8.03-24.77-24.83V0h-60.27v137.63c-.19,16.8-8.08,24.68-24.77,24.83H0v60.26h137.72c16.68.11,24.54,7.99,24.73,24.83v137.63h60.27v-137.63c.18-16.83,8.05-24.72,24.73-24.83h137.72v-60.26h-137.66Z"/>
+              </svg>
             </div>
-            <a href="#" class="view-more-btn">View Full Case Studies →</a>
+            <h3>Strategic repositioning</h3>
+            <p>A sequenced value creation roadmap — covering ESG compliance, capital deployment priorities, and repositioning pathways grounded in Swiss market structure.</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Ready to Transform Your Operations?</h2>
-            <p class="contact-subtitle">Schedule a confidential consultation with our senior advisors.</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Work Email">
-                <textarea placeholder="Tell us about your goals..."></textarea>
-                <button type="submit" class="cta-button">Submit Inquiry</button>
-            </form>
+    <!-- Differentiator band -->
+    <section class="section-white differentiator">
+      <div class="container">
+        <div class="diff-grid">
+          <div class="diff-col reveal">
+            <span class="eyebrow">What we are</span>
+            <ul class="diff-list">
+              <li>An intelligence layer for mid-market Swiss commercial assets</li>
+              <li>Quantified, decision-grade value engineering</li>
+              <li>Confidential, discretion-appropriate analysis</li>
+              <li>Grounded in Swiss regulation, planning, and energy standards</li>
+              <li>Outcome-oriented, sequenced recommendations</li>
+            </ul>
+          </div>
+          <div class="diff-divider" aria-hidden="true"></div>
+          <div class="diff-col reveal">
+            <span class="eyebrow">What we are not</span>
+            <ul class="diff-list diff-list--not">
+              <li>A marketing or brokerage platform</li>
+              <li>Generic real estate advisory</li>
+              <li>Public-facing transactional services</li>
+              <li>Institutional fund advisory or property management</li>
+              <li>Short-term consultancy without strategic depth</li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 AdvancedCorp. All Rights Reserved.</p>
+    <!-- Who We Serve -->
+    <section id="who-we-serve" class="section-ciment">
+      <div class="container">
+        <span class="eyebrow">Who we serve</span>
+        <h2>Decision-makers responsible for assets in transition.</h2>
+        <p class="section-intro">Robertson+ works selectively with owners, investors, and trustees who require decision-grade analysis on underperforming, under-positioned, or transitional commercial assets.</p>
+
+        <div class="audience-grid">
+          <div class="audience-card reveal">
+            <h3>Private owners &amp; family offices</h3>
+            <p>Swiss commercial asset holders managing inherited or long-held properties navigating repositioning, succession, or capital redeployment decisions.</p>
+          </div>
+          <div class="audience-card reveal">
+            <h3>Real estate investors</h3>
+            <p>Investors acquiring or managing mid-market Swiss commercial assets who require structured pre-acquisition diagnostics or post-acquisition value creation roadmaps.</p>
+          </div>
+          <div class="audience-card reveal">
+            <h3>Lenders &amp; advisors</h3>
+            <p>Banks, fiduciaries, and legal advisors requiring independent asset intelligence on collateral quality, income resilience, or structural risk in distressed or transitional situations.</p>
+          </div>
+          <div class="audience-card reveal">
+            <h3>Corporates with real estate</h3>
+            <p>Swiss corporations carrying owner-occupied or legacy commercial real estate requiring objective assessment of strategic options, disposal value, or income conversion potential.</p>
+          </div>
         </div>
-    </footer>
-    <script src="script.js"></script>
+      </div>
+    </section>
+
+    <!-- Selected Situations -->
+    <section id="situations" class="section-white">
+      <div class="container">
+        <span class="eyebrow">Selected situations</span>
+        <h2>The types of mandates we accept.</h2>
+        <p class="section-intro">Robertson+ accepts a limited number of mandates each year. Each engagement begins with a confidential first exchange to assess relevance and scope.</p>
+
+        <div class="situations-grid">
+          <div class="situation-card reveal">
+            <span class="situation-tag">Occupancy</span>
+            <h3>Persistent vacancy in a positioned asset</h3>
+            <p>Structural analysis of occupancy failure — separating pricing, positioning, spatial, and market factors to identify the correct intervention sequence.</p>
+          </div>
+          <div class="situation-card reveal">
+            <span class="situation-tag">Repositioning</span>
+            <h3>Asset at a strategic crossroad</h3>
+            <p>Asset-level re-underwriting and strategic options analysis for owners facing conversion, redevelopment, or income strategy decisions in an evolving market.</p>
+          </div>
+          <div class="situation-card reveal">
+            <span class="situation-tag">ESG &amp; compliance</span>
+            <h3>Energy transition &amp; regulatory exposure</h3>
+            <p>Swiss energy standards and ESG compliance roadmap — translating regulatory obligations into sequenced capital deployment with income impact modeling.</p>
+          </div>
+          <div class="situation-card reveal">
+            <span class="situation-tag">Acquisition</span>
+            <h3>Pre-acquisition intelligence</h3>
+            <p>Independent income quality, structural risk, and value creation analysis conducted prior to acquisition — providing decision-grade counterpoint to vendor materials.</p>
+          </div>
+          <div class="situation-card reveal">
+            <span class="situation-tag">Disposition</span>
+            <h3>Value narrative for disposal</h3>
+            <p>Credible, quantified repositioning narrative and financial re-underwriting to support asset disposal at value — not market price by default.</p>
+          </div>
+          <div class="situation-card reveal">
+            <span class="situation-tag">Portfolio</span>
+            <h3>Portfolio rationalisation</h3>
+            <p>Asset-by-asset diagnosis within a portfolio to sequence capital allocation, identify disposal candidates, and prioritise income resilience improvements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interior image section — all corners rounded (floating image, whitespace on all sides) -->
+    <section class="section-ciment insight-section">
+      <div class="container">
+        <div class="insight-grid">
+          <div class="insight-text reveal">
+            <span class="eyebrow">How we work</span>
+            <h2>Confidential by structure. Analytical by discipline.</h2>
+            <p>Every engagement is conducted under strict confidentiality. Robertson+ does not publish case studies, does not reference clients publicly, and does not share mandate details across engagements.</p>
+            <p>Our analysis integrates legal, spatial, leasing, technical, and financial dimensions — not as parallel workstreams but as a unified intelligence layer applied to the specific asset in question.</p>
+            <a href="#contact" class="btn-secondary">Contact Robertson+</a>
+          </div>
+          <!-- Interior image: 50px radius on all corners (floating, whitespace on all sides) -->
+          <div class="insight-image img-interior reveal" role="img" aria-label="Robertson+ analysis methodology — commercial asset review"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section-white">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <span class="eyebrow">Confidential exchange</span>
+            <h2>For selected Swiss commercial assets.</h2>
+            <p>Robertson+ offers a confidential first exchange focused on value creation potential, structural risk, and strategic options. This is not a sales process — it is a diagnostic conversation.</p>
+            <address class="contact-address">
+              <p>avenue des Uttins 1<br>CH-1180 Rolle</p>
+              <p><a href="tel:+41786333175">+41 78 633 31 75</a></p>
+              <p><a href="mailto:pm@robertson.plus">pm@robertson.plus</a></p>
+            </address>
+          </div>
+
+          <form class="contact-form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Work email" autocomplete="email" required>
+            </div>
+            <div class="form-group">
+              <label for="asset">Asset context</label>
+              <input type="text" id="asset" name="asset" placeholder="Brief asset description (optional)">
+            </div>
+            <div class="form-group">
+              <label for="message">Context</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe the situation or question you are working through."></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Request a confidential asset review</button>
+            <p class="form-note">All enquiries are treated in strict confidence. Robertson+ does not share client information.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo-link footer-logo" aria-label="Robertson+ — Home">
+          <svg class="logo-symbol" viewBox="0 0 385.17 385.18" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M222.86,222.72h-60.51v-60.51h60.51v60.51ZM247.52,162.46h-.03c-16.69-.14-24.59-8.03-24.77-24.83V0h-60.27v137.63c-.19,16.8-8.08,24.68-24.77,24.83H0v60.26h137.72c16.68.11,24.54,7.99,24.73,24.83v137.63h60.27v-137.63c.18-16.83,8.05-24.72,24.73-24.83h137.72v-60.26h-137.66Z"/>
+          </svg>
+          <span class="footer-tagline">Robertson+ — Swiss Commercial Real Estate Value Engineering</span>
+        </a>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#approach">Approach</a>
+        <a href="#who-we-serve">Who we serve</a>
+        <a href="#contact">Confidential review</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <address class="footer-contact">
+        <span>avenue des Uttins 1, CH-1180 Rolle</span>
+        <a href="tel:+41786333175">+41 78 633 31 75</a>
+        <a href="mailto:pm@robertson.plus">pm@robertson.plus</a>
+      </address>
+
+      <p class="footer-copy">Design by Robertson Group. &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
